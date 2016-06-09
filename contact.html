@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Coda Music Studio: Contact</title>
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<meta name="description" content="Private and group music lessons for a variety of instruments and other music skills." />
+<link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
+<link href="./coda_style.css" rel="stylesheet" />
+</head>
+
+<body>
+<div id="container">
+	<div id="nav">
+		<div id="logoTop">
+			<ul id="navText">
+				<li><a href="./index.html"><span><img src="./images/home_white.png" alt="Home" width="16" height="15" /></span></a></li>
+				<li><a href="./studio.html"><span>Studio</span></a></li>
+				<li><a href="./instructor.html"><span>Instructor</span></a></li>
+				<li><a href="./lessons.html"><span>Lessons</span></a></li>
+				<li id="currentTab"><span>Contact</span></li>
+				<li><a href="./media.html"><span>Media</span></a></li>
+				<li><a href="./events.html"><span>Events</span></a></li>
+			</ul>
+		</div>
+		<div id="logoLeft"></div>
+		<div id="logoBottomNoHeader"></div>
+	</div>
+	<div id="main">
+		<div class="columnLeft">
+			<form id="form1" name="form1" action="http://formmail.dreamhost.com/cgi-bin/formmail.cgi" method="post">
+				<input type="hidden" name="recipient" value="cirdornala@codamusicstudio.com">
+				<input type="hidden" name="subject" value="Coda Music Studio Lesson Interest">
+				<input type="hidden" name="required" value="parent,email,phone">
+				<input type="hidden" name="date_offset" value="-5">
+				<input type="hidden" name="redirect" value="http://www.codamusicstudio.com/thanks.html">
+				<input type="hidden" name="missing_fields_redirect" value="http://www.codamusicstudio.com/error.html">
+				<fieldset>
+				<legend>Lesson Interest</legend>
+				<table id="formTable">
+					<tr>
+						<td id="tableLeft" class="formLabel"><label for="parent">Parent Name:</label></td>
+						<td id="tableRight" ><input name="parent" id="parent" type="text" tabindex="1" />*</td>
+					</tr>
+					<tr>
+						<td class="formLabel"><label for="student">Student Name:</label></td>
+						<td><input name="student" id="student" type="text" tabindex="5" /></td>
+					</tr>
+					<tr>
+						<td class="formLabel"><label for="email">Email:</label></td>
+						<td><input name="email" id="email" type="text" tabindex="10" />*</td>
+					</tr>
+					<tr>
+						<td class="formLabel"><label for="phone">Phone No.:</label></td>
+						<td><input name="phone" id="phone" type="text" tabindex="15" />*</td>
+					</tr>
+					<tr>
+						<td class="formLabelTop">Lesson Type:</td>
+						<td>
+							<p>
+								<label><input type="radio" name="lesson" value="keyboard" tabindex="20" />Keyboard/Piano</label>
+								<br />
+								<label><input type="radio" name="lesson" value="drums" tabindex="25" />Drums</label>
+								<br />
+								<label><input type="radio" name="lesson" value="other" tabindex="30" />Other (Specify)</label>
+								<input type="text" name="other" tabindex="35" />
+								<br />
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="formLabelTop">Experience:</td>
+						<td>
+							<p>
+								<label><input type="radio" name="experience" value="beginner" id="experience_0" accesskey="b" tabindex="40" />Beginner</label>
+								<br />
+								<label><input type="radio" name="experience" value="intermediate" id="experience_2" accesskey="i" tabindex="45" />Intermediate</label>
+								<br />
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="formLabelTop">
+							<label for="reset"></label>
+							<input type="reset" name="reset" id="reset" value="Reset" accesskey="r" tabindex="50" />
+						</td>
+						<td>
+							<label for="submit"></label>
+							<input type="submit" name="submit" id="submit" value="Send to Coda Music Studio" tabindex="55" onclick="alert('Thanks! I'll get back to you shortly!');" /><br /><br /><p>* = Required Field</p>
+						</td>
+					</tr>
+				</table>
+				</fieldset>
+			</form>
+		</div>
+		<div class="columnRight">
+			<h1>Contact Info</h1>
+			<p>
+      			Email: <a class="altLink" href="./&#109;&#x61;&#105;&#x6c;&#x74;&#x6f;&#58;&#x63;&#x6f;&#100;&#97;&#x6d;&#117;&#x73;&#105;&#x63;&#x73;&#x74;&#117;&#100;&#105;&#x6f;&#x40;&#x76;&#101;&#x72;&#105;&#122;&#x6f;&#x6e;&#46;&#110;&#101;&#x74;">&#x63;&#x6f;&#100;&#97;&#x6d;&#117;&#x73;&#105;&#x63;&#x73;&#x74;&#117;&#100;&#105;&#x6f;&#x40;&#x76;&#101;&#x72;&#105;&#122;&#x6f;&#x6e;&#46;&#110;&#101;&#x74;</a>
+				<br />
+				Phone: (215) 721&ndash;8952<br />
+				Address: 317 Reliance Rd., Telford, PA 18969
+			</p>
+			<br />
+			<br />
+			<h1>Directions</h1>
+			<form action="http://maps.google.com/maps" method="get">
+				<p>Enter your address: </p>
+				<p>
+					<input name="saddr" type="text" />
+					<input name="daddr" type="hidden" value="40.319396,-75.328025" /> 
+					<input type="submit" value="Get Directions" />
+				</p>
+			</form>
+		</div>
+	</div>
+	<div id="footer">
+		<ul id="footerText">
+			<li><a href="./index.html">Home</a></li>
+			<li><a href="./studio.html">Studio</a></li>
+			<li><a href="./instructor.html">Instructor</a></li>
+			<li><a href="./lessons.html">Lessons</a></li>
+			<li class="inactiveLink">Contact</li>
+			<li><a href="./media.html">Media</a></li>
+			<li><a href="./events.html">Events</a></li>
+		</ul>
+		<div class="columnRight"><p class="subTextRight">Content &copy; 2009&ndash;2016 Rick Daam</p></div>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* gallery styling */
+
+#galleryContainer {
+	clear: left;
+	margin: 0 auto;
+	padding-left: 62px;
+	padding-top: 10px;
+	position: relative;
+	width: 690px;
+}
+
+#jgal {
+	list-style: none;
+	height: 300px;
+	width: 150px;
+}
+
+#jgal li {
+	background-position: 70% 50%;
+	border: 3px solid #fff;
+	cursor: pointer;
+	display: block;
+	float: left;
+	height: 60px;
+	margin-left: 9px;
+	margin-top: 9px;
+	opacity: .5;
+	outline: 1px solid #559cbe;
+	width: 60px;
+}
+
+#jgal li img {
+	border: 3px solid #fff;
+	display: none;
+	left: 236px;
+	outline: 1px solid #8b6900;
+	position: absolute;
+	top: 19px;
+}
+
+#jgal li.active img {
+	display: block;
+}
+
+#jgal li.active, #jgal li:hover {
+	opacity: .99; /* safari bug */
+	outline-color: #8b6900;
+}
+
+/* styling without javascript */
+#gallery {
+	display: block;
+	list-style: none;
+}
+
+#gallery li {
+	border: 3px solid #fff;
+	float: left;
+	margin: 0 10px 10px 0;
+	outline: 1px solid #559cbe;
+}
+
+#gallery img {
+	max-height: 111px;
+	max-width: 156px;
+}
+
+#gallery li:hover {
+	border-bottom: none;
+	outline-color: #8b6900;
+}
