@@ -1,0 +1,386 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*Begin CSS Reset ----------------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline
+}
+
+/* remember to define focus styles! */
+:focus {outline: 0}
+
+body {
+	line-height: 1;
+	color: black;
+	background: white;
+	font-family: Georgia, "Times New Roman", Times, serif
+}
+
+ol, ul {list-style: none}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0
+}
+
+caption, th, td {
+	text-align: left;
+	font-weight: normal
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {content: ""}
+
+blockquote, q {quotes: "" ""}
+/*End CSS Reset ----------------------------*/
+
+/*Begin Page Elements ----------------------*/
+body {
+	background-image: url(images/striped_back.gif);
+	color: #444;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 10px;
+	font-weight: normal
+}
+
+p {
+	color: #444;
+	font-size: 1.6em;
+	line-height: 1.6em;
+	padding-left: 15px
+}
+
+small {
+	color: #444;
+	font-size: 1.0em;
+	font-style: italic;
+	text-transform: uppercase
+}
+
+p a:link, a:link small {color: #8b6900}
+
+p a:visited, a:visited small {color: #8b6900}
+
+p a:hover, a:hover small {text-decoration: underline}
+
+h1 {
+	color: #559cbe;
+	font-size: 2.0em;
+	letter-spacing: normal;
+	padding-bottom: 10px
+}
+
+h2 {
+	color: #444;
+	font-size: 1.2em;
+	font-weight: bold;
+	margin-bottom: -5px;
+	padding: 6px 0 10px 10px;
+	text-transform: uppercase
+}
+
+a {text-decoration: none}
+
+ol {
+	color: #444;
+	font-size: 1.6em;
+	line-height: 1.6em;
+	list-style-type: decimal;
+	list-style-position: inside;
+	padding: 0 20px 0 15px;
+	text-indent: 15px
+}
+/*End Page Elements ------------------------*/
+
+/*Begin IDs --------------------------------*/
+#container {
+	margin: 0 auto;
+	width: 850px
+}
+
+#nav {
+	overflow: hidden;
+	width: 850px
+}
+
+#logoTop {
+	background-image: url(images/logo_top.png);
+	float: left;
+	height: 135px;
+	width: 850px
+}
+
+#logoLeft {
+	background-image: url(images/logo_left.png);
+	float: left;
+	height: 65px;
+	width: 50px
+}
+
+#logoBottomHeader {
+	background-image: url(images/logo_header.jpg);
+	float: left;
+	height: 248px;
+	width: 800px
+}
+
+#logoBottomNoHeader {
+	background-image: url(images/logo_no_header.jpg);
+	float: left;
+	height: 65px;
+	width: 800px
+}
+
+#navText {
+	float: right;
+	font-size: 1.7em;
+	margin-right: -1px;
+	padding-top: 101px
+}
+
+#navText li {
+	display: inline;
+	float:left
+}
+
+#navText a {
+	background: url(images/tab_left.png) no-repeat left top;
+	float: left;
+	padding-left: 4px
+}
+
+#navText a span {
+	background: url(images/tab_right.png) no-repeat right top;
+	color: #fff;
+	float: left;
+	padding: 8px 13px 9px 8px
+}
+
+#navText a:hover {background-position: 0% -35px}
+
+#navText a:hover span {background-position: 100% -35px}
+
+#currentTab {
+	background: url(images/tab_left.png) no-repeat left top;
+	background-position: 0% -70px;
+	float: left;
+	padding-left: 4px
+}
+
+#currentTab span {
+	background: url(images/tab_right.png) no-repeat right top;
+	background-position: 100% -70px;
+	color: #8b6900;
+	float: left;
+	padding: 8px 13px 9px 8px
+}
+
+#main {
+	background-color: #fff;
+	overflow: hidden;
+	margin-left: 50px;
+	padding: 0 40px 40px 40px;
+	width: 720px
+}
+
+#footer {
+	background-image: url(images/bottom_nav.jpg);
+	margin: 0 0 60px 50px;
+	width: 800px
+}
+
+#footerText {
+	padding: 9px 0 10px 0;
+	text-align: center
+}
+
+#footerText li {
+	display: inline;
+	font-size: 1.2em;
+	padding: 8px 28px 9px 28px
+}
+
+#footerText li a:link, a:visited {color: #fff}
+
+#footerText li a:hover {color: #8b6900}
+
+#features {
+	list-style-type: square;
+	text-indent: 0
+}
+
+#giveItATry {
+	margin: 0 auto;
+	padding: 5px 10px 10px 10px;
+	width: 300px;
+	text-align: center
+}
+
+/*
+
+#schoolYear {
+	color: #8b6900;
+	font-size: 0.8em;
+	padding-bottom: 10px;
+	/*visibility: hidden
+}
+
+#schoolYear li {
+	display: inline;
+	font-size: 1.6em;
+	margin-left: 17px;
+	padding: 6px 17px
+}
+
+#schoolYear li.rowHover {
+	cursor: pointer;
+	text-decoration: underline
+}
+
+#schoolYear li.rowSelected {
+	background: url(images/circle.png) no-repeat center;
+	color: #444;
+	cursor: auto;
+	text-decoration: none
+}
+
+#playlist {width: 100%}
+
+#playlist li {
+	border-bottom: 1px solid #eee;
+	color: #8b6900;
+	font-size: 1.2em;
+	padding: 6px 6px 6px 15px
+}
+
+#playlist .runningTime {
+	color: #888;
+	text-align: right
+}
+
+#playlist li.rowHover {
+	cursor: pointer;
+	text-decoration: underline
+}
+
+#playlist li.rowSelected {
+	background: url(images/bullet_arrow.gif) no-repeat left;
+	color: #444;
+	cursor: auto;
+	text-decoration: none
+}
+/*End IDs ----------------------------------*/
+
+/*Begin Classes ----------------------------*/
+.columnLeft {
+	float: left;
+	width: 47%
+}
+
+.columnRight {
+	float: right;
+	width: 47%
+}
+
+.bold {font-weight: bold}
+
+.italic {font-style: italic}
+
+.paraAlt {font-family: Arial}
+
+.monospace {font-family: "Courier New"}
+
+.subTextLeft {
+	color: #fff;
+	font-size: 1.1em;
+	padding: 8px 0 0 20px
+}
+
+.subTextRight {
+	color: #fff;
+	font-size: 1.1em;
+	padding: 8px 20px 0 0;
+	text-align: right
+}
+
+.containerRight {
+	float: right;
+	margin: 8px 0 8px 30px
+}
+
+.containerLeft {
+	float: left;
+	margin: 8px 30px 8px 15px 
+}
+
+.containerLeft:hover .imgCaption a {
+	color: #8b6900;
+	text-decoration: underline
+}
+
+.imgMargin {margin-top: 18px}
+
+.imgCaption {
+	font-size: 1.1em;
+	font-style: italic;
+	padding: 5px 0 4px 0;
+	text-align: center
+}
+
+.imgCaption a {color: #444}
+
+.inactiveLink {color: #444}
+/*End Classes ------------------------------*/
+
+/*Begin Form CSS ---------------------------*/
+.inputField {width: 150px}
+
+#formTable {width: 319px}
+
+#formTable td {padding-bottom: 10px}
+
+.formLabel {
+	font-size: 1.6em;
+	padding-right: 10px;
+	text-align: right
+}
+
+.formLabelTop {
+	font-size: 1.6em;
+	padding-right: 10px;
+	text-align: right;
+	vertical-align: top
+}
+
+legend {
+	color: #559cbe;
+	font-size: 2.0em;
+	padding: 0 5px 10px 5px
+}
+
+fieldset {
+	border: #8b6900 1px solid;
+	padding: 10px;
+	width: 320px
+}
+
+#tableLeft {width: 113px}
+
+#tableRight {width: 206px}
+/*End Form CSS -----------------------------*/
